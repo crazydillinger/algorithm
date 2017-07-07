@@ -15,12 +15,12 @@ public class Insertion {
     public static int[] insertSort(int[] arr){
         for(int i = 1; i < arr.length;i++){
             int temp = arr[i];
+
             for(int j = i; j > 0 && arr[j - 1] > arr[j];j--){
                 arr[j] = arr[j - 1];
                 arr[j - 1] = temp;
             }
         }
-
         return arr;
     }
 }

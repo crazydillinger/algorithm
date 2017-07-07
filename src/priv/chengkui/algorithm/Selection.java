@@ -17,13 +17,16 @@ public class Selection {
 
     private static int[] sort(int[] arr) {
         int N = arr.length;
+
         for(int i = 1; i < N; i++){
             int minIndex = i - 1;//最小元素下标
+
             for(int j = i ; j < N; j++){
                 if(arr[minIndex] > arr[j]){
                     minIndex = j;
                 }
             }
+
             if(minIndex != (i -1)){
                 int temp = arr[minIndex];
                 arr[minIndex] = arr[i - 1];

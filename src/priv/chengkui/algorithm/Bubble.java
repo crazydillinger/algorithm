@@ -19,7 +19,7 @@ public class Bubble {
         int N = arr.length;
 
         for(int i = 1; i < N; i++){
-            for(int j = i - 1; j < N - i; j++){
+            for(int j = 0; j < N - i; j++){
                 if(arr[j] > arr[j + 1]){
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -27,7 +27,6 @@ public class Bubble {
                 }
             }
         }
-
         return arr;
     }
 }
